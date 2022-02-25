@@ -1,6 +1,6 @@
 import { Day } from './Day'
-import { IsLeapYear, Year } from './Year'
 import { Month } from './Month'
+import { IsLeapYear, Year } from './Year'
 
 export class DateOfBirth {
   private constructor(private readonly date: Date) {}
