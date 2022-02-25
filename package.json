@@ -5,12 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "main": "node -r tsm main.ts"
+    "main": "npx ts-node main.ts"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "tsm": "^2.2.1"
-  }
+  "license": "ISC"
 }
