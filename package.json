@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npm run types:emit && uvu -r ts-node/register",
     "types:emit": "rimraf types/ && tsc --declaration --emitDeclarationOnly --outDir types",
     "main": "ts-node main.ts"
   },
@@ -15,6 +16,7 @@
     "rimraf": "^3.0.2",
     "ts-node": "^10.5.0",
     "tsd": "^0.19.1",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "uvu": "^0.5.3"
   }
 }
