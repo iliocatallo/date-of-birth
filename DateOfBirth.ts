@@ -11,11 +11,11 @@ export class DateOfBirth {
   }
 }
 
-type DayMonthYear<Y extends number> =
+type DayMonthYear<Y extends Year> =
   | { day: DaysOfFebruary<Y>, month: 2, year: Y }
   | { day: Exclude<Day, 31>, month: 4 | 6 | 9 | 11, year: Y }
   | { day: Day, month: Exclude<Month, 2 | 4 | 6 | 9 | 11>, year: Y }
 
-type DaysOfFebruary<Y extends number> = IsLeapYear<Y> extends true
+type DaysOfFebruary<Y extends Year> = IsLeapYear<Y> extends true
   ? Exclude<Day, 30 | 31>
   : Exclude<Day, 29 | 30 | 31>
